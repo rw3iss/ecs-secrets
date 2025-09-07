@@ -2,12 +2,7 @@
 This package installs a command that pulls secrets from a given EC2 task definition file, with values defined as AWS SSM parameter ARNs, and transcribes the ARNs to their actual SSM values.
 It will then print the secret values to the screen, or save them to a file, in normal ENV=var format.
 
-### Inspiration:
-It was created to solve the annoyance of having to manually go through the definition file secrets and looking up each value, which sometimes has to happen when joining a new project that doesn't have a full version of the env variables elsewhere.
-
-I couldn't find another straightforward way to do this, so I had our good friend ChatGPT whip this up for me.  If anyone knows if there is a way to actually do this through AWS utils or otherwise, please open an issue or email me at rw3iss@gmail.com.
-
-## Install:
+## Install
 `npm i -g ecs-secrets` (global)
 
 `npm i ecs-secrets` (local project)
@@ -19,7 +14,7 @@ Run against a task definition file, and ensure the AWS SSM credentials are set, 
 `ecs-secrets task-def.json -r <region> -i <access-key-id> -s <access-key-secret>`
 
 
-## Setting Credentials:
+## Credentials
 AWS credentials are read in order of precedence: command line > AWS credentials file > ENV vars
 
 If a local .env file exists, it will read it. You can specify an environment-specific .env file to use by setting NODE_ENV. ie. NODE_ENV=development will try to read .env.development.
@@ -32,7 +27,7 @@ AWS_REGION
 AWS_PROFILE (optional, if using a credentials file)
 ```
 
-## Command-line Options:
+## Command-line Options
 
 ```
       --version       Show version number                              [boolean]
@@ -48,7 +43,7 @@ AWS_PROFILE (optional, if using a credentials file)
 ```
 
 
-## Development (todo):
+## Development (todo)
 ```
 npm i
 npm run build
