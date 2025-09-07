@@ -42,7 +42,7 @@ const argv = (0, yargs_1.default)((0, helpers_1.hideBin)(process.argv))
     .option("profile", {
     alias: "p",
     type: "string",
-    describe: "AWS profile name from shared credentials",
+    describe: "AWS profile name (if using credentials)",
 })
     .option("output", {
     alias: "o",

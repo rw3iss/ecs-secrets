@@ -30,16 +30,15 @@ AWS_PROFILE (optional, if using a credentials file)
 ## Command-line Options
 
 ```
-      --version       Show version number                              [boolean]
-  -t, --task          Task definition file path              [string] [required]
-  -r, --region        AWS region                                        [string]
-  -i, --accessId      AWS access key ID                                 [string]
-  -a, --accessKey     AWS secret access key                             [string]
-  -s, --sessionToken  AWS session token (optional)                      [string]
-  -p, --profile       AWS profile name from shared credentials          [string]
-  -o, --output        Optional output file path                         [string]
-  -d, --decrypt       Decrypt secure string parameters[boolean] [default: false]
-      --help          Show help                                        [boolean]
+      --version    Show version number                                 [boolean]
+  -r, --region     AWS region                                           [string]
+  -i, --accessId   AWS access key ID                                    [string]
+  -s, --accessKey  AWS secret access key                                [string]
+  -t, --token      AWS session token (optional)                         [string]
+  -p, --profile    AWS profile name from shared credentials             [string]
+  -o, --output     Optional output file path                            [string]
+  -d, --decrypt    Set true if your SSM is encrypted  [boolean] [default: false]
+  -h               Show the help menu                                  [boolean]
 ```
 
 
