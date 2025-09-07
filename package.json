@@ -6,6 +6,10 @@
 		"email": "rw3iss@gmail.com",
 		"url": "https://www.ryanweiss.net"
 	},
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/rw3iss/ecs-secrets"
+	},
 	"license": "UNLICENSED",
 	"bin": {
 		"ecs-secrets": "./dist/index.js"
