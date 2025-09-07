@@ -1,0 +1,31 @@
+{
+	"name": "ecs-secrets",
+	"version": "1.0.0",
+	"author": {
+		"name": "Ryan Weiss",
+		"email": "rw3iss@gmail.com",
+		"url": "https://www.ryanweiss.net"
+	},
+	"license": "UNLICENSED",
+	"bin": {
+		"ecs-secrets": "./dist/index.js"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"test": "node dist/index.js -t test/dev-task-definition.json"
+	},
+	"dependencies": {
+		"@aws-sdk/client-ssm": "^3.883.0",
+		"@aws-sdk/credential-providers": "^3.883.0",
+		"dotenv": "^16.6.1",
+		"yargs": "^18.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.0.0",
+		"@types/yargs": "^17.0.33",
+		"typescript": "^5.4.0"
+	}
+}
