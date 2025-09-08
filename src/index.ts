@@ -52,7 +52,7 @@ const argv = yargs(hideBin(process.argv))
 	.option("output", {
 		alias: "o",
 		type: "string",
-		describe: "Optional output file path",
+		describe: "Output file path (optional)",
 	})
 	.option("decrypt", {
 		alias: "d",

@@ -1,6 +1,6 @@
 {
 	"name": "ecs-secrets",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"author": {
 		"name": "Ryan Weiss",
 		"email": "rw3iss@gmail.com",
@@ -11,6 +11,15 @@
 		"url": "https://github.com/rw3iss/ecs-secrets"
 	},
 	"license": "UNLICENSED",
+	"keywords": [
+		"aws",
+		"ec2",
+		"ssm",
+		"task definition",
+		"environment",
+		"env",
+		"variables"
+	],
 	"bin": {
 		"ecs-secrets": "./dist/index.js"
 	},
